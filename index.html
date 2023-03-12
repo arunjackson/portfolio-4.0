@@ -6,7 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arun N</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./favicon-2.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-2.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script type="text/javascript">
+  function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "sender@email_address.com",
+      Password: "Enter your password",
+      To: 'arunjackson293@gmail.com',
+      From: "sender@email_address.com",
+      Subject: "Sending Email using javascript",
+      Body: "Well that was easy!!",
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+  }
+</script>
 </head>
 <body>
     <section class="navsection">
@@ -15,7 +36,7 @@
             <ol class="orderli">
                <li> <a href="index.html"> About </a>  </li>
                <li> <a href="#projectss "> Project</a> </li>
-               <li><a href="">Social Networks</a> </li>
+               <li><a href="#consec">Contact Me</a> </li>
             </ol>
 
         </nav>
@@ -24,7 +45,7 @@
 <section id="abtsectionn" class="abtsection">
 <div class="abtgrid">
     <div  class="imagediv">
-      <img class="myimage" src="./IMG_2008.JPG" alt="">
+      <img class="myimage" src="images/IMG_2008.JPG" alt="">
    </div>
 
     <div  class="mytext"> 
@@ -64,7 +85,7 @@ Ongoing learnings :MangoDB,Reactjs,NOdejs,J2EE,Springboot.
 <!--  project section     -->
 <section id="projectss" class="projects">
 <h1>Projects</h1>
-<h6> ----->Checkout my projects here ..</h6>
+
 
 
 
@@ -123,7 +144,7 @@ Ongoing learnings :MangoDB,Reactjs,NOdejs,J2EE,Springboot.
   </div>
 <!-- Appleclone -->
   <div>
-    <div class="pjcard">
+    <div class="pjcard ">
 
         <h2 style="margin-left: 3%; padding-top: 4%;">Apple website clone </h2>
         <p style="margin-left: 3%; padding-right: 3%;">
@@ -152,7 +173,7 @@ Ongoing learnings :MangoDB,Reactjs,NOdejs,J2EE,Springboot.
   
 </div>
 <!-- games -->
-<section>
+<section class="gamessection">
     <br>
   
 
@@ -248,25 +269,40 @@ Ongoing learnings :MangoDB,Reactjs,NOdejs,J2EE,Springboot.
 </section>
 
 <!--contact form  -->
-<section class="contactme" >
-    <div class="social"> 
-        <ol class="orderli">
-          <li>
-            <a href="https://www.linkedin.com/in/arun-n-050375191/"> Linkden </a>
-          </li>
-          <li>
-            <a href="https://github.com/arunjackson"> Github </a>
-          </li>
-          <li>
-            arunjackson293@gmail.com
-        </li>
-        </ol>
-      </div>
-    </div>
-   
 
+<section class="contactmesec" id="consec">
+
+  <h2>Contact Me</h2>
+  <center> 
+<div class="forms"> 
+
+  <img class="formimg" style="border-radius: 20px;" height="250px" width="100%" src=" /images/pexels-toni-cuenca-577560.jpg" alt="">
+<br> <br>
+    <input style=" border-style: none; background-color: white; border-radius: 10px; height: 40px; padding-left: 20px;" type="text" name="" id="myname" placeholder="Name"> <br> <br>
+    <input style=" border-style: none; background-color: white; border-radius: 10px; height: 40px; padding-left: 20px; " type="text" id="myreaon" placeholder="Reason"> <br> <br>
+   <input id=" submitt" style=" border-style: none; background-color: white; border-radius: 10px; width: 100px;  "  type="button" onclick="sendEmail()"  value="Submit">
+  </div>
+</center>
 
 </section>
+
+<footer>
+  <div class="social"> 
+    <ol class="orderli">
+      <li>
+        <a href="https://www.linkedin.com/in/arun-n-050375191/"> Linkden </a>
+      </li>
+      <li>
+        <a href="https://github.com/arunjackson"> Github </a>
+      </li>
+      <li>
+        arunjackson293@gmail.com
+    </li>
+    </ol>
+  </div>
+</div>
+
+</footer>
 
 </body>
 </html>

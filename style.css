@@ -86,6 +86,11 @@ a:any-link
 {
     margin-top: 5%;
 }
+h1
+{
+    margin-left: 20px;
+    font-weight: 100;
+}
 .projects
 {
     height: 100vh;
@@ -93,15 +98,16 @@ a:any-link
 .pjcard
 {
     
-    height:300px;
+    height:340px;
     width:370px;
     margin-left: 30px;
     margin-top: 30px;
     box-shadow: 0px 1px 1px;
     border-radius: 5%;
- 
+
   
 }
+
 .pjcard:hover 
 {
     display: block;
@@ -122,7 +128,7 @@ display: none;
 }
 .visitweb
 {
-    margin-top: 30px;
+    margin-top: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
      display: flex;
      align-items: center;
@@ -161,6 +167,7 @@ color: white;
     width: auto;
     margin-bottom: 60px;
     background-color: bisque;
+
    
 }
 .social
@@ -187,10 +194,47 @@ color: white;
     justify-content: center;
     width: auto;
 }
+.gamessection
+{
+    margin-bottom: 50px;
+}
 
+.forms
+{
+background-color: bisque;
+    width: 500px;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: 0px 4px 9px;
+}
+.contactmesec
+{
+    margin-top: 120px;
+    height: 100vh;
+}
+#submitt:hover{
+    background-color:blue;
+    color: black;
+}
 
 @media only screen and (max-width:600px) 
 {
+    .abtgrid
+{
+    display: grid;
+    display: flex;
+   
+}
+    .mytext
+{
+    display: flex;
+    margin-left: 5%;
+    box-shadow: 0px 1px 1px;
+    border-radius: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    
+}
     .pjcard
     {
     
@@ -206,7 +250,9 @@ color: white;
     .projectgrid
 {
 
- display: block;
+  display:inline-block;
+  align-items: center;
+  justify-content: space-evenly;
 
    
 }
@@ -224,6 +270,12 @@ color: white;
     justify-content: center;
     width: auto;
   
+}
+.contactmesec
+{
+    margin-top: 1500px;
+    display:block;
+    align-items: center;
 }
 
 }
